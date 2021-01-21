@@ -1,0 +1,29 @@
+<% include headeradmin %>
+    <!-- form add product -->
+    <div class="jumbotron login">
+        <div class="container">
+            <div class="container text-xs-center">
+            <h1 class="">Form Add Product</h1>
+            <hr class="my-2">
+            <!-- alert -->
+            <% if(typeof(message) !== "undefined"){ %>
+                <div id="formFooter">
+                    <i class="alert alert-danger" ><%= message %></i>
+                </div>
+                <% } %>
+            <div class="col-sm-6 push-sm-3 mt-2">     
+                <form action="" method="POST">
+                    <input type="text" name="productID" placeholder="ProductID" required><br/>
+                    <input type="text" name="productName" placeholder="Product Name" required><br/>
+                    <input type="file" name="productImage" placeholder="Product Image" required><br/>
+                    <select name="category" > 
+                        <option value="smartphone" selected >Choose category (default): SMARTPHONE</option>
+                        <option value="laptop" >LAPTOP</option>                   
+                        <option value="tablet" >TABLET</option>                   
+                    </select>
+                    <input type="number" name="price" placeholder="Price" required><br/>
+                    <input type="submit" class="btn btn-success btnSubmit" value="Save">
+                </form>
+            </div>                         
+        </div>
+    </div>

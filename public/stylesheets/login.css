@@ -1,0 +1,40 @@
+.jumbotron.login{
+    margin-bottom:0 ;
+}
+@-webkit-keyframes appear{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.frmContact{
+    height: 400px;
+}
+form{
+    background: white;
+    border-radius: 20px;
+    height: 250px;
+    box-shadow: 10px 10px 5px grey;
+    margin-bottom: 20px;
+
+    animation: appear 3s forwards;
+}
+form input{
+    width: 300px;
+    margin-top: 20px;
+    display: inline-block;
+    height: 50px;
+    border-radius: 20px;
+    background: #f3f2f2;
+    border: none;
+    text-align: center;
+}
+form input.btnSubmit{
+    width: 300px;
+    margin-top: 20px;  
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+.login{
+    height: 800px;
+}

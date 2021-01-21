@@ -1,0 +1,134 @@
+*{margin: 0; padding: 0;} 
+
+body{
+    background-color: #f5f3f3;
+}
+/*start Menu */
+.menu{
+    background: #dc805e;
+}
+.menu-left a{width: 8%;}
+.menu-left a img{
+    width: 90%;
+}
+.menu-left .menu-left-item{
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 12px;
+}
+.menu-left .menu-left-item a.nav-link {
+    padding: 0 10px;
+    width: 100%;
+    color: #332f2f;
+}
+.menu-left .menu-left-item a.nav-link:hover{
+    color: orangered;
+}
+.menu-right a{color: white;text-decoration: none;}
+.menu-right i{
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+.menu-right a:hover{
+    color: orangered;
+}
+.menu-right a:hover i{
+    color: orangered;
+}
+
+/*end Menu  */  
+
+
+/* footer */
+.footer{
+    background: black;
+    height: 50px;
+}
+.footer-left{
+    margin-top: 10px;
+}
+.footer-right{
+    margin-top: 10px;
+}
+.footer-right i{
+    margin:0 5px;
+}
+
+.footer-right .fa.fa-facebook {
+    color: blue;
+    background: white;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 4px 8px;
+}
+.footer-right .fa.fa-youtube{
+    color: red;
+    background: white;
+    
+    font-size: 20px;
+    padding: 4px 8px;
+}
+.footer-right .fa.fa-twitter{
+    color: blue;
+    background: white;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 4px 8px;
+}
+/* end footer */
+.welcome{
+    background: url('../images/bg1.jpg');
+    background-size: cover;
+    height: 800px;
+}
+/* form */
+.login{
+    margin: 0;
+}
+form{
+    background: white;
+    border-radius: 20px;
+    height: 450px;
+    box-shadow: 10px 10px 5px grey;
+    margin-bottom: 20px;
+}
+form input{
+    width: 300px;
+    margin-top: 20px;
+    display: inline-block;
+    height: 50px;
+    border-radius: 20px;
+    background: #f3f2f2;
+    border: none;
+    text-align: center;
+}
+form select{
+    width: 300px;
+    margin-top: 20px;
+    display: inline-block;
+    height: 50px;
+    border-radius: 20px;
+    background: #f3f2f2;
+    border: none;
+    color: gray;
+    text-align: center;
+}
+form select option{
+    text-align: center;
+}
+form input.btnSubmit{
+    width: 300px;
+    margin-top: 20px;  
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+.login{
+    height: auto;
+}
+/* form */

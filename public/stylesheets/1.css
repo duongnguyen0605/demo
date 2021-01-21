@@ -1,0 +1,186 @@
+*{margin: 0; padding: 0;} 
+
+body{
+    background-color: #f5f3f3;
+}
+/*start Menu */
+.menu{
+    background: #dc805e;
+}
+.menu-left{}
+.menu-left a{width: 8%;}
+.menu-left a img{
+    width: 90%;
+}
+.menu-left .menu-left-item{
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 12px;
+}
+.menu-left .menu-left-item a.nav-link {
+    padding: 0 10px;
+    color: #332f2f;
+}
+.menu-left .menu-left-item a.nav-link:hover{
+    color: orangered;
+}
+.menu-right a{color: white;text-decoration: none;}
+.menu-right i{
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+.menu-right a:hover{
+    color: orangered;
+}
+.menu-right a:hover i{
+    color: orangered;
+}
+
+/*end Menu  */  
+
+/* Start Carousel */
+.carousel-slide{}
+.carousel-slide .carousel-item{}
+._1block{
+    background: #fde3e3;
+    height: 500px;
+}
+._1block .block-left{}
+._1block .block-left div{
+    margin-bottom: 45px;
+}
+._1block .block-left h3{font-size: 50px;color: #0e0d0d;padding-bottom: 30px;font-weight: 300;}
+._1block .block-left p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 300;
+}
+/* Start Carousel */
+
+/* start smartphone */
+.smartphone{
+    background: white;
+    margin-top: 30px;      
+    margin-bottom: 20px;
+}
+.smartphone-title p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+.smartphone-title{
+    background-image: -webkit-linear-gradient(right,pink 0%, green 50%, yellow 100%);
+    border-bottom: 2px solid pink;
+}
+.smartphone-item{
+    margin-top: 20px;
+}
+.smartphone-item .card{
+    height: 380px;
+}
+.smartphone-item a{
+    text-decoration: none;
+    color: black;
+    
+}
+.smartphone-item a:hover .card .card-body h4{
+    color: blue;
+}
+.smartphone-item a:hover .card img{
+    transform: translateY(-5px);
+}
+.smartphone-item .card img{
+    margin: 10px 0;
+    transition: 0.4s;
+}
+.smartphone-item .card .card-body h4{
+    margin-left: 10px;
+    transition: 0.4s;
+}
+.smartphone-item .card .card-body p{
+    margin-left: 10px;
+    color: red;
+    font-weight: bold;
+    
+}
+.smartphone-item .card .card-body p span{
+    text-decoration: line-through;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 10px;
+    color:black;
+    font-weight: 500;
+}
+.smartphone-item .card .card-body p i{
+    font-size: 12px;
+    font-weight: 600;
+}
+/* end smartphone */
+/* laptop */
+.laptop-item .card .card-body h6{
+    margin-left: 10px;
+    transition: 0.4s;
+    font-size: 14px;
+}
+.laptop-item .card{
+    height: 280px;
+}
+.laptop-item a:hover .card .card-body h6{
+    color: blue;
+}
+/* end laptop */
+
+/* tablet */
+.tablet-item .card .card-body h6{
+    margin-left: 10px;
+    transition: 0.4s;
+    font-size: 14px;
+}
+.tablet-item a:hover .card .card-body h6{
+    color: blue;
+}
+/* end tablet */
+
+/* footer */
+.footer{
+    background: black;
+    height: 50px;
+}
+.footer-left{
+    margin-top: 10px;
+}
+.footer-right{
+    margin-top: 10px;
+}
+.footer-right i{
+    margin:0 5px;
+}
+
+.footer-right .fa.fa-facebook {
+    color: blue;
+    background: white;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 4px 8px;
+}
+.footer-right .fa.fa-youtube{
+    color: red;
+    background: white;
+    
+    font-size: 20px;
+    padding: 4px 8px;
+}
+.footer-right .fa.fa-twitter{
+    color: blue;
+    background: white;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 4px 8px;
+}
+/* end footer */

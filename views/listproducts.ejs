@@ -1,0 +1,49 @@
+<% include headeradmin %>
+    
+<!-- table products-->
+<div class="container">
+    <div class="jumbotron ">
+        <h1 class="display-3 text-sm-center">List products</h1>
+        <% if(typeof(message) !== "undefined"){ %>
+            <div class="text-sm-center">
+                <i class="alert alert-danger" ><%= message %></i>
+            </div>
+        <% } %>
+        <hr class="my-2">
+    
+    <a href="/admin/addproduct" type="button" class="btn btn-outline-primary">Add product</a>
+
+    <table class="table table-striped  ">
+        <thead class="thead-inverse">
+            <tr>
+                <th>ProductID</th>
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+                <% products.forEach((item)=>{ %>
+                <tr>
+                    <td scope="row"><%= item.productID %></td>
+                    <td><%= item.productName %></td>
+                    <td><%= item.productImage %></td>
+                    <td><%= item.category %></td>
+                    <td><%= item.price %></td>
+                    <td>
+                        <div class="btn-group">
+                            <a href="/admin/updateproduct-<%= item.productID %>" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                            <a href="/admin/delproduct.<%= item.productID %>" class="btn btn-danger"><i class="fa fa-trash"></i> </a>
+                        </div>
+                        
+                    </td>
+                </tr>
+                <% }) %>
+            </tbody>
+    </table>
+    </div>
+</div>
+    <!-- end table products-->
+    <% include footeruser %>

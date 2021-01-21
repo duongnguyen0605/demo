@@ -1,0 +1,33 @@
+<% include headeradmin %>
+<!-- form add _1user -->
+<div class="jumbotron login">
+    <div class="container">
+        <div class="container text-xs-center">
+        <h1 class="">Form Update _1user</h1>
+        <hr class="my-2">
+        <!-- alert -->
+        <% if(typeof(message) !== "undefined"){ %>
+        <div id="formFooter">
+            <i class="alert alert-danger" ><%= message %></i>
+        </div>
+        <% } %>
+        <div class="col-sm-6 push-sm-3 mt-2">     
+            <form action="/admin/updateuser" method="POST">
+                <input type="hidden"  name="userID" placeholder="User ID"  value=<%= _1user.userID %> ><br/>
+                <input type="text" name="name" placeholder="Full Name" required value="<%= _1user.name %>"  ><br/>
+                <input type="text" name="username" placeholder="Username" required value=<%= _1user.username %> ><br/>
+                <input type="text" name="password" placeholder="Password" required value=<%= _1user.password %> ><br/>  
+                <select name="role" >
+                    <% if(_1user.role == "user"){ %>
+                    <option value="user" selected >USER</option>
+                    <option value="admin" >ADMIN</option>
+                    <% } else{ %>
+                    <option value="user"  >USER</option>
+                    <option value="admin" selected>ADMIN</option>
+                    <% } %>
+                </select>
+                <input type="submit" class="btn btn-success btnSubmit" value="Save">
+            </form>
+        </div>                         
+    </div>
+</div>

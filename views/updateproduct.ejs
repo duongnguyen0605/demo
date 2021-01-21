@@ -1,0 +1,39 @@
+<% include headeradmin %>
+    <!-- form add product -->
+    <div class="jumbotron login">
+        <div class="container">
+            <div class="container text-xs-center">
+            <h1 class="">Form Add Product</h1>
+            <hr class="my-2">
+            <!-- alert -->
+            <% if(typeof(message) !== "undefined"){ %>
+                <div id="formFooter">
+                    <i class="alert alert-danger" ><%= message %></i>
+                </div>
+                <% } %>
+            <div class="col-sm-6 push-sm-3 mt-2">     
+                <form action="/admin/updateproduct" method="POST">
+                    <input type="hidden" name="productID" placeholder="ProductID" value=<%= product.productID%> ><br/>
+                    <input type="text" name="productName" placeholder="Product Name" required value="<%= product.productName%>" ><br/>
+                    <input type="text" name="productImage" placeholder="Product Image" required value=<%= product.productImage%> ><br/>
+                    <select name="category" > 
+                        <% if(product.category == "smartphone"){ %>
+                        <option value="smartphone" selected >SMARTPHONE</option>
+                        <option value="laptop" >LAPTOP</option>                   
+                        <option value="tablet" >TABLET</option> 
+                        <% }else if(product.category == "laptop"){ %>
+                        <option value="smartphone"  >SMARTPHONE</option>
+                        <option value="laptop" selected>LAPTOP</option>                   
+                        <option value="tablet" >TABLET</option> 
+                        <% } else { %>
+                        <option value="smartphone"  >SMARTPHONE</option>
+                        <option value="laptop" >LAPTOP</option>                   
+                        <option value="tablet" selected>TABLET</option> 
+                        <% } %> 
+                    </select>
+                    <input type="number" name="price" placeholder="Price" required value=<%= product.price %> ><br/>
+                    <input type="submit" class="btn btn-success btnSubmit" value="Save">
+                </form>
+            </div>                         
+        </div>
+    </div>

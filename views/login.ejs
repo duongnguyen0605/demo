@@ -1,0 +1,25 @@
+<% include headeruser %>
+      <div class="jumbotron login">
+          <div class="container text-xs-center">
+            <h1 class=""><i class="fa fa-user"></i>LOGIN</h1>
+                <hr class="my-2">
+                <div class="col-sm-6 push-sm-3">
+                    
+                    <form action="/login" method="POST">
+                        <input type="text" id="login" class="txtUsername" name="username" placeholder="login"><br/>
+                        <input type="password" id="password" class="txtPassword" name="password" placeholder="password"><br/>
+                        <input type="submit" class="btn btn-success btnSubmit" value="Log In">
+                    </form>
+                </div>
+                
+            
+                <!-- Remind Passowrd -->
+                <% if(typeof(message) !== "undefined"){ %>
+                <div id="formFooter">
+                    <i class="alert alert-danger"><%= message %></i>
+                </div>
+                <% } %>
+          </div>
+          
+      </div>
+<% include footeruser %>

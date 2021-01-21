@@ -1,0 +1,53 @@
+<% include headeradmin %>
+    
+        <!-- table user-->
+        <div class="container">
+            <div class="jumbotron ">
+                <h1 class="display-3 text-sm-center">List user</h1>
+                <% if(typeof(message) !== "undefined"){ %>
+                    <div class="text-sm-center">
+                        <i class="alert alert-danger" ><%= message %></i>
+                    </div>
+                <% } %>
+                <hr class="my-2">
+                
+            <a href="/admin/adduser" type="button" class="btn btn-outline-primary">Add user</a>
+            <table class="table table-striped  ">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>UserID</th>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Passowrd</th>
+                        <th>Role</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <% users.forEach((item)=>{%>
+                        <tr>
+                            <td scope="row"><%= item.userID%></td>
+                            <td><%= item.name%></td>
+                            <td><%= item.username%></td>
+                            <td><%= item.password%></td>
+                            <td><%= item.role%></td>
+                            <td>
+                                <div class="btn-group">
+                                    <a href="/admin/updateuser-<%= item.userID %>" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                                    <a href="/admin/deluser.<%= item.userID %>" class="btn btn-danger"><i class="fa fa-trash"></i> </a>
+                                </div>
+                                
+                            </td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+            </table>
+        </div>
+        </div>
+        <!-- end table user-->
+        
+        
+
+        
+        
+<% include footeruser %>

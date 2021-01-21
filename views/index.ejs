@@ -1,0 +1,143 @@
+<% include headeruser %>
+
+		
+		<div id="carousel-example-generic" class="carousel slide carousel-slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="row _1block">
+						<div class="col-sm-6 block-left">
+							<div class="carousel-caption">
+								<h3>Cutting Edge Technology Store</h3>
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis magnam perferendis nesciunt labore iusto quod cumque odit repellendus quam magni possimus debitis dolorum rem voluptatem deleniti ipsam amet, nulla ea.</p>
+							</div>
+						</div>
+						<div class="col-sm-6 block-right">
+							<img src="images\slide-1.png" alt="First slide">
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row _1block">
+						<div class="col-sm-6 block-left">
+							<div class="carousel-caption">
+								<h3>Cutting Edge Technology Store</h3>
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis magnam perferendis nesciunt labore iusto quod cumque odit repellendus quam magni possimus debitis dolorum rem voluptatem deleniti ipsam amet, nulla ea.</p>
+							</div>
+						</div>
+						<div class="col-sm-6 block-right">
+							<img src="images\slide-2.png" alt="First slide">
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row _1block">
+						<div class="col-sm-6 block-left">
+							<div class="carousel-caption">
+								<h3>Cutting Edge Technology Store</h3>
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis magnam perferendis nesciunt labore iusto quod cumque odit repellendus quam magni possimus debitis dolorum rem voluptatem deleniti ipsam amet, nulla ea.</p>
+							</div>
+						</div>
+						<div class="col-sm-6 block-right">
+							<img src="images\slide-3.png" alt="First slide">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- end carousel -->
+
+		<!-- smartphone -->
+		
+		<div class="container smartphone">
+			<div class="row">
+				<div class="col-sm-12 smartphone-title">
+					<p>Smartphone</p>
+				</div>
+			<% products.forEach(function(item){ %>
+				<% if(item.category == "smartphone"){ %>
+				<div class="col-sm-3 smartphone-item">
+					<a href="#">
+						<div class="card">
+							<img class="card-img-top" src=<%= item.productImage %> alt="" width="100%">
+							<div class="card-body">
+								<h4 class="card-title"><%= item.productName %></h4>
+								<p class="card-text"><%= item.price %>đ 
+									<span><%= item.price*111/100 %>đ</span>
+									<i> -11% </i>
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<% } %>
+			<% }) %>
+			</div>
+		</div>
+		<!-- end smartphone -->
+		<!-- Start Laptop -->
+		<div class="container smartphone laptop">
+			<div class="row">
+				<div class="col-sm-12 smartphone-title">
+					<p>Laptop</p>
+				</div>
+			<% products.forEach(function(item){ %>
+				<% if(item.category == "laptop"){ %>
+				<div class="col-sm-3 smartphone-item laptop-item">
+					<a href="#">
+						<div class="card">
+							<img class="card-img-top" src=<%= item.productImage %> alt="" width="100%">
+							<div class="card-body">
+								<h6 class="card-title"><%= item.productName %>
+								</h6>
+								<p class="card-text"><%= item.price %>đ 
+									<span><%= item.price*105/100 %>đ</span>
+									<i> -5% </i>
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<% } %>
+			<% }) %>
+				
+			</div>
+		</div>
+		<!-- end laptop -->
+		<!-- Start tablet -->
+		<div class="container smartphone tablet">
+			<div class="row">
+				<div class="col-sm-12 smartphone-title">
+					<p>Tablet</p>
+				</div>
+			<% products.forEach(function(item){ %>
+				<% if(item.category == "tablet"){ %>
+				<div class="col-sm-3 smartphone-item tablet-item">
+					<a href="#">
+						<div class="card">
+							<img class="card-img-top" src=<%= item.productImage %> alt="" width="100%">
+							<div class="card-body">
+								<h6 class="card-title"><%= item.productName %>
+								</h6>
+								<p class="card-text"><%= item.price %>đ 
+									<span><%= item.price*110/100 %>đ</span>
+									<i> -10% </i>
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<% } %>
+			<% }) %>
+				
+				
+			</div>
+		</div>
+		<!-- end tablet -->
+		
+<% include footeruser %>

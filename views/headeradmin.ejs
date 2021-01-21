@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> HOME </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="../javascripts/vendor/bootstrap.js"></script>
+	<script type="text/javascript" src="1.js"></script>
+	<link rel="stylesheet" href="../javascripts/vendor/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="../stylesheets/admin.css">
+</head>
+<body >
+	<div class="menu">
+		<nav class="navbar navbar-light">
+		   <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">  
+		   </button>
+		   <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+			   <div class="row">
+				   <div class="col-sm-8 menu-left">
+						<a class="navbar-brand" href="#"><img src="../images/logoAD.png" alt=""></a>
+						<ul class="nav navbar-nav menu-left-item">
+							<li class="nav-item">
+								<a class="nav-link" href="/admin/users">Manage User </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/admin/products">Manage Products </a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-4 text-sm-right menu-right">
+						<% if(typeof(user) === "undefined"){ %>
+							<a href="/login">
+								<i class="fa fa-user"></i> My account
+							</a>
+							<% }else{ %>						
+								<a href="/login"><i class="fa fa-user"></i>Hi, <%= user.name %></a>
+								<a href="/logout"><span class="fa fa-sign-out "></span></a>
+							<% } %>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!-- end nav -->

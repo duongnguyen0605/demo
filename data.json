@@ -1,0 +1,119 @@
+{
+    "products":[
+        {
+            "productID":1,
+            "productName":"OPPO A93",
+            "productImage":"images/phone-1.jpg",
+            "category":"smartphone",
+            "price":7190000
+        },
+        {
+            "productID":2,
+            "productName":"Điện thoại iPhone 12 mini 64GB",
+            "productImage":"images/phone-2.jpg",
+            "category":"smartphone",
+            "price":19190000
+        },
+        {
+            "productID":3,
+            "productName":"Điện thoại Xiaomi Redmi Note 9S",
+            "productImage":"images/phone-3.jpg",
+            "category":"smartphone",
+            "price":5590000
+        },
+        {
+            "productID":4,
+            "productName":"Điện thoại Samsung Galaxy Note 20 Ultra",
+            "productImage":"images/phone-4.jpg",
+            "category":"smartphone",
+            "price":26990000
+        },
+        {
+            "productID":5,
+            "productName":"Laptop Lenovo IdeaPad Slim 3 15IIL05 i3 1005G1/4GB/512GB/Win10 (81WE003RVN)",
+            "productImage":"images/laptop-1.jpg",
+            "category":"laptop",
+            "price":17990000
+        },
+        {
+            "productID":6,
+            "productName":"Laptop Acer Aspire 3 A315 54K 37B0 i3 8130U/4GB/256GB/Win10 (NX.HEESV.00D)",
+            "productImage":"images/laptop-2.jpg",
+            "category":"laptop",
+            "price":9990000
+        },
+        {
+            "productID":7,
+            "productName":"Laptop Apple MacBook Air 2017 i5 1.8GHz/8GB/128GB (MQD32SA/A)",
+            "productImage":"images/laptop-3.jpg",
+            "category":"laptop",
+            "price":18990000
+        },
+        {
+            "productID":8,
+            "productName":"Laptop Lenovo IdeaPad S340 14IIL i5 1035G1/8GB/512GB/Win10 (81VV003SVN)",
+            "productImage":"images/laptop-4.jpg",
+            "category":"laptop",
+            "price":13990000
+        },
+        {
+            "productID":9,
+            "productName":"Máy tính bảng iPad 8 Wifi 128GB (2020)",
+            "productImage":"images/tablet-1.jpg",
+            "category":"tablet",
+            "price":10990000
+        },
+        {
+            "productID":10,
+            "productName":"Máy tính bảng Huawei MatePad T8 (Nền tảng Huawei Mobile Service)",
+            "productImage":"images/tablet-2.jpg",
+            "category":"tablet",
+            "price":2990000
+        },
+        {
+            "productID":11,
+            "productName":"Máy tính bảng Samsung Galaxy Tab S6",
+            "productImage":"images/tablet-3.jpg",
+            "category":"tablet",
+            "price":16990000
+        },
+        {
+            "productID":12,
+            "productName":"Máy tính bảng Huawei Mediapad T5 10.1 inch (3GB/32GB)",
+            "productImage":"images/tablet-4.jpg",
+            "category":"tablet",
+            "price":4990000
+        }
+    ],
+    "user":[
+        {
+            "userID":1,
+            "name":"Trần Thái Sơn",
+            "username":"admin1",
+            "password":"123",
+            "role":"admin"
+        },
+        {
+            "userID":2,
+            "name":"Trần Hoàng Tuyết Hạ",
+            "username":"admin2",
+            "password":"123",
+            "role":"admin"
+        },
+        {
+            "userID":3,
+            "name":"Nguyễn Anh Đào",
+            "username":"user1",
+            "password":"123",
+            "role":"user"
+        },
+        {
+            "userID":4,
+            "name":"Nguyễn Anh Hoàng",
+            "username":"user2",
+            "password":"123",
+            "role":"user"
+        }
+    ]
+}
+    
